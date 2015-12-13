@@ -1,4 +1,5 @@
 ﻿var ulist = document.querySelector(".ulist").children;
+
 for(var i=ulist.length;i--;){
 	ulist[i].addEventListener("click",function(){
 		var data = this.getAttribute("data-id");

@@ -1,0 +1,159 @@
+﻿html,h2,body,ul,h2{margin:0;padding:0}
+/*\5FAE\8F6F\96C5\9ED1 微软雅黑  '\5b8b\4f53'宋体*/
+body{font:12px/1.5 '\5FAE\8F6F\96C5\9ED1','\5b8b\4f53',sans-serif,arial;}
+ul{list-style:none}
+
+
+/******FE前端助手********/
+.FE_warpper{
+	width:100px;
+	height:120px;
+}
+.FE_warpper h2{
+	font-size:15px;
+	color:#333;
+	font-weight:normal;
+	border-bottom:1px dotted #ddd;					
+	text-align:left;
+	text-indent:10px;
+}
+.FE_warpper ul>li{
+	width:100%;
+	height:28px;
+	line-height:28px;
+	cursor:pointer;
+	text-align:center;
+	font-size:13ßß	px;
+	color:#555;
+	cursor:pointer;
+	&:hover{
+		-webkit-transition:color .2s ease-in-out;
+		-moz-transition:color .2s ease-in-out;
+		transition:color .2s ease-in-out;
+		color:#6190e8
+	}	
+}
+
+
+
+/********base64位**********/
+h2.qrcode_tit{
+    padding: 0;
+    text-align: center;
+    background: #333;
+    font-size: 24px;
+    line-height: 1.7;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,.5);	
+    font-weight: normal;
+}
+section.base64{
+	width:600px;
+	border:1px solid #ddd;
+	margin:20px auto;
+}
+div.base64_con{
+ 	margin:10px;
+ 	height:300px;
+ 	border:1px dashed #ddd;
+ 	background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAABLCAIAAAB7tddWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1Q0VBNzA0MjEyMDUxMUUzODk2Q0JFM0Q1RjE4QkExQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1Q0VBNzA0MzEyMDUxMUUzODk2Q0JFM0Q1RjE4QkExQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjAzNDA2MkY1MTIwMzExRTM4OTZDQkUzRDVGMThCQTFDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjAzNDA2MkY2MTIwMzExRTM4OTZDQkUzRDVGMThCQTFDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+K6izdgAAAk1JREFUeNrt2+uOgjAQhuG9/5tUPEs0nhU87hvNGoJY0C0yyNffBNuHdjpT8Oeidm0/IhCEIAQhCEEIQhCCEMT5fA6CoHVt7Xb7dDo1d0Yw/tZfE4QgBCEIQQjCHMThcBiPx51Op/XBljngl1pufvEaxH6//zCBUQjmwttd+SqI9rUJ4pK89XA4jKKoocEyCUG8aO6ukYSg5hOEIAQhCEH4gOCa+Xze7/e5vtvtTiaT4/HYOAj2116vl0psgiDYbrcGy7YSIQaDQWaSh0VJ88IixHK5dCS80+m0KRBhGDogWDIex8D8St7cVowYjUYOCGr5gr8YxzEhFjhiLUGXqfRY4JiGoPcOCMJH7m8xnmc3od5LVjqmIXa7nQOCPTX3HOy26TrK6tVqVQMIR5hgnrv7ysAe910HqHUILmBJp7pO7OBpe1G4tfV6bR3iHu0WiwWrfTab5aZSjMG9IjLXyGazqQHEq2eibxzD3V+FfwkEU8bLAWe9IVg1vk56awxB+ExN74ZCkCB5PPuvKwS5gN+XICYg6AQDI1lgv2TjzL2hOwGtKwQBj9KoeCpNj1PXfwMEWVNmt5gazxaRu1SvJYR7nRMLH4+kvIeG6iGKDInyIVliUCCU98a4GojiQ6IoIHeMoohFVOor9QogiPmVfCVgC4JnW8nXM+Ygytj5aglhtglCEIIQhCCMQFT1neVLh9qfeAlM+WQcgh5+AiKOY5vZ5H06FDkN8gBxO2gNw5C00s7UoCf0h1795xtY/e9TEIIQhCAEIQhBCEIQftovDwuUVV5nLjcAAAAASUVORK5CYII=) center 100px no-repeat;
+}
+div.img_wrap{
+	width:180px;
+	height:170px;
+	margin:15px auto;
+	border:1px solid #ddd;
+	overflow: hidden;
+}
+div.img_wrap img{
+	width:100%;
+	height:100%;
+}
+p.base64_txt{
+	text-align: center;
+}
+textarea.base64text{
+	resize:none;
+	display: block;
+	margin:10px auto;
+	width:580px;
+	border:1px solid #ddd;
+	height:300px;
+}
+a#filelink{
+	display:block;
+	width:180px;
+	text-align: center;
+    font-size: 20px;
+    background: #00b7ee;
+    border-radius: 3px;
+    line-height: 44px;
+    height: 45px;
+    margin:0 auto;	
+	box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    text-decoration: none;    
+    position: relative;
+    color:#fff;
+}
+input.base64_btn{
+	position: absolute;
+    left:0;
+    top:0;
+    opacity: 0;
+    width:100%;
+    height:100%;
+}
+input.copy{
+	width:100px;
+	height:30px;
+	line-height:30px;
+	background: #00b7ee;
+	border:0;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	color:#fff;
+	margin: 0 0 20px 20px
+}
+/**********二维码生成器**************/
+h2{
+	font-size:16px;
+	color:#333;
+	text-align:center;
+}
+#textarea,#cssCode{
+	resize:none;
+	width:640px;
+	height:200px;
+	display:block;
+	margin:10px auto;
+	text-indent:4px;
+	border:1px solid #ddd;
+}
+input.qrcode_btn{
+	width:140px;
+	height:36px;
+	line-height:36px;
+	background:#00b7ee;
+	color:#fff;
+	border:0;
+	margin:10px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	font-size:14px;
+	&.qrcode{
+		display:block;
+		margin:10px auto;
+	}
+}
+div#code{
+	display:block;
+	width:200px;
+	margin:0 auto;
+}
+
+/*******css美化********/
+div.warp{
+	width:660px;
+	margin: 0 auto;
+}
